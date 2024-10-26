@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Project</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/63ae14fc95.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="./images/WhatsApp_Image_2024-10-25_at_14.51.24_309e31af-removebg-preview.png" class="logo" width="200px"> -->
+                <h1 class="logo" id="logo"><span>N</span>andha<span>K</span>umar</h1>
+                <ul id="unorder-list">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="handleMenuClose()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="handleMenuOpen()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Developer</p>
+                <h1>Hi , I'm <span>Nandha<br id="one">Kumar</span> <br id="two"> From <br id="three">India.</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------------------about---------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="./images/image_for_portfolio-black-screen-hd.png">
+                </div>
+                <div class="col-2">
+                    <h1 id="sub-title-about">About <span>Me</span></h1>
+                    <p> &nbsp; &nbsp; &nbsp; &nbsp; I'm an IT professional with expertise in software development , dedicated to creating innovative and efficient tech solutions . I thrive in collaborative environments where I can leverage my skills to solve complex problems . Passionate about continuous learning, I stay updated with the latest industry trends to deliver impactful results.</p>
+                    <div class="tab-titles">
+                        <div class="tab-links active-tab" id="skills-tab">
+                            <p onclick="handleSkills()">Skills</p> 
+                        </div>
+                        <div class="tab-links" id="experience-tab">
+                            <p onclick="handleExperience()">Experience</p> 
+                        </div>
+                        <div class="tab-links" id="education-tab">
+                            <p onclick="handleEducation()">Education</p> 
+                        </div>
+                    </div>
+                    <div class="tab-contents active-contents" id="skills-content">
+                        <ul>
+                            <li><span>UI/UX</span><br> &nbsp; &nbsp; &nbsp; Designing Web/App interfaces.</li>
+                            <li><span>Web Development</span><br> &nbsp; &nbsp; &nbsp; Web App Development.</li>
+                            <li><span>App Development</span><br> &nbsp; &nbsp; &nbsp; Building Android/iOS app.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience-content">
+                        <ul>
+                            <li><span>From 2023</span><br> &nbsp; &nbsp; &nbsp; Completed Few Small Scale FreeLancing Projects.</li>
+                            <!-- <li><span>2019 - 2021</span><br> &nbsp; &nbsp; &nbsp; Team lead at CTS.</li>
+                            <li><span>2016 - 2017</span><br> &nbsp; &nbsp; &nbsp; Internship at CIT College.</li> -->
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education-content">
+                        <ul>
+                            <li><span>2025</span><br> &nbsp; &nbsp; &nbsp; Studied B.E - ECE at Erode Sengunthar Enginnering College.</li>
+                            <li><span>2016</span><br> &nbsp; &nbsp; &nbsp; Completed HLC in Einstein Matriculation and Higer Secondary School.</li>
+                            <li><span>2014</span><br> &nbsp; &nbsp; &nbsp; Completed SSLC in Vidhya Mandhir Matriculation School.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------------------------services--------------------------- -->
+    <div id="services">
+        <div class="container service-container">
+            <h1 id="sub-title-service"> <span>My </span> Services</h1>
+            <div class="service-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I provide intuitive and engaging UI/UX design services that prioritize user experience and streamline digital interactions. With a focus on responsive design, accessibility, and visual appeal, I craft interfaces that align with both brand identity and user needs. My goal is to transform ideas into seamless, user-friendly designs that drive engagement and satisfaction.</p>
+                    <a href="#">learn more.</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Development</h2>
+                    <p>I offer professional web development services focused on creating fast, secure, and responsive websites that deliver a seamless user experience. Specializing in both front-end and back-end development, I build scalable solutions tailored to meet unique business goals. My goal is to bring ideas to life through high-quality, user-friendly websites that drive engagement and growth.</p>
+                    <a href="#">learn more.</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>I provide custom app development services to build high-performing, user-friendly applications across iOS and Android platforms. From concept to launch, I focus on seamless functionality, engaging design, and optimized performance to meet unique business needs. My goal is to create apps that enhance user experience and drive growth, ensuring quality at every step.</p>
+                    <a href="#">learn more.</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ------------------------portfolio--------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 id="sub-title-portfolio"><span>My </span> Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>A social media application is a digital platform that allows individuals to connect with others, share activities, develop skills, and display virtues in an online community setting.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Music streaming sites are designed to deliver immediate results for users, providing them with a positive experience.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online shopping App</h3>
+                        <p>Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser or a mobile app.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" id="see-more-button">See More</a>
+        </div>
+    </div>
+    
+    <!-- ----------------------------contact----------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title" id="sub-title-contact">Contact <span>Me</span></h1>
+                    <p><i class="fa-regular fa-envelope"></i>nandhabvn2003@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+91 7339218120</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/nandhu_1812_?igsh=dHFqNnhtbzBtZ2hn"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=61555777740422&mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/Naniii_81?t=UpIsu7iDn0y8jIUVZ16Q_w&s=09"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/nandha-kumar-s-06b29526a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/final_draft_resume_nandha.png" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                        <p id="sent-msg"></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; by Nandha &#8482; . Made with &nbsp; <i class="fa-solid fa-heart"></i></p>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>
