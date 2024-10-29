@@ -152,7 +152,7 @@ nav ul li a:hover::after{
 }
 
 .active-tab::after{
-    width: 100%;
+    width: 50%;
 }
 
 .skill::after{
